@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #dde1e7; /* Cor base para o efeito neumorfismo */
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sidebar{
+  position: fixed;
+  left: 30px;
+  height: 560px;
+  width: 260px;
+  background: #dde1e7;
+  border-radius: 10px;
+  padding: 30px 20px;
+  /* Efeito Neumorfismo Principal */
+  box-shadow: -3px -3px 7px #ffffffb2,
+               3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+
+.sidebar .logo{
+  font-size: 25px;
+  font-weight: 600;
+  color: #31344b;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  margin: 20px 0;
+}
+
+.nav-links li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #31344b;
+  font-size: 18px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito de botão "pressionado" no hover */
+.nav-links li a:hover{
+  box-shadow: inset -2px -2px 5px #ffffffb2,
+              inset 2px 2px 5px rgba(94, 104, 121, 0.692);
+  color: #3498db;
+}
+
+.nav-links li a i{
+  font-size: 20px;
+  margin-right: 15px;
+}
